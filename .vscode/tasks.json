@@ -22,11 +22,11 @@
 				"isDefault": true
 			},
 			"command": "make",    //它要执行的命令是make
-			"args": [
-				// ">>",
-				// "../log/make_build.log",
-				// "2>&1"
-			],
+			// "args": [
+			// 	">>",
+			// 	"../log/make_build.log",
+			// 	"2>&1"
+			// ],
 			"problemMatcher": []    //这里也需要添加一个空的问题匹配器，否则会报错
 		},
 		{
