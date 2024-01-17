@@ -2,6 +2,11 @@ cmake_minimum_required (VERSION 3.0)
 
 aux_source_directory (. SRC_LIST)
 
+
+# 引用第三方库(例如引用Eigen3矩阵库)
+# find_package(Eigen3 REQUIRED)
+# include_directories (${EIGEN3_INCLUDE_DIRS})
+
 include_directories (../inc)
 
 add_executable (main ${PROJECT_SOURCE_DIR}/main.cpp ${SRC_LIST})

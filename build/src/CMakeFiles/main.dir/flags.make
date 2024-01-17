@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/tungchiahui/mysource/ros2src/demo_test/src/../inc
+CXX_INCLUDES = -I/home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/src/../inc
 
-CXX_FLAGS = -std=c++11 -Wall
+CXX_FLAGS =  -std=c++11 -Wall -g
 

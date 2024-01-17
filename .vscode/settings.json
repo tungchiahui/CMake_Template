@@ -1,4 +1,12 @@
 {
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
     "files.associations": {
         "cctype": "cpp",
         "clocale": "cpp",
@@ -16,6 +24,7 @@
         "bit": "cpp",
         "*.tcc": "cpp",
         "bitset": "cpp",
+        "charconv": "cpp",
         "chrono": "cpp",
         "compare": "cpp",
         "complex": "cpp",
@@ -58,6 +67,7 @@
         "numbers": "cpp",
         "ostream": "cpp",
         "semaphore": "cpp",
+        "span": "cpp",
         "sstream": "cpp",
         "stdexcept": "cpp",
         "stop_token": "cpp",
@@ -65,14 +75,7 @@
         "thread": "cpp",
         "cinttypes": "cpp",
         "typeindex": "cpp",
-        "typeinfo": "cpp"
-    },
-    "python.autoComplete.extraPaths": [
-        "/opt/ros/humble/lib/python3.10/site-packages",
-        "/opt/ros/humble/local/lib/python3.10/dist-packages"
-    ],
-    "python.analysis.extraPaths": [
-        "/opt/ros/humble/lib/python3.10/site-packages",
-        "/opt/ros/humble/local/lib/python3.10/dist-packages"
-    ]
+        "typeinfo": "cpp",
+        "variant": "cpp"
+    }
 }

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tungchiahui/mysource/ros2src/demo_test
+CMAKE_SOURCE_DIR = /home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tungchiahui/mysource/ros2src/demo_test/build
+CMAKE_BINARY_DIR = /home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/main.dir/depend.make
@@ -72,30 +72,30 @@ include src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/__/main.cpp.o: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/__/main.cpp.o: ../main.cpp
 src/CMakeFiles/main.dir/__/main.cpp.o: src/CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tungchiahui/mysource/ros2src/demo_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/main.dir/__/main.cpp.o"
-	cd /home/tungchiahui/mysource/ros2src/demo_test/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/main.dir/__/main.cpp.o -MF CMakeFiles/main.dir/__/main.cpp.o.d -o CMakeFiles/main.dir/__/main.cpp.o -c /home/tungchiahui/mysource/ros2src/demo_test/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/main.dir/__/main.cpp.o"
+	cd /home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/main.dir/__/main.cpp.o -MF CMakeFiles/main.dir/__/main.cpp.o.d -o CMakeFiles/main.dir/__/main.cpp.o -c /home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/main.cpp
 
 src/CMakeFiles/main.dir/__/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/__/main.cpp.i"
-	cd /home/tungchiahui/mysource/ros2src/demo_test/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tungchiahui/mysource/ros2src/demo_test/main.cpp > CMakeFiles/main.dir/__/main.cpp.i
+	cd /home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/main.cpp > CMakeFiles/main.dir/__/main.cpp.i
 
 src/CMakeFiles/main.dir/__/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/__/main.cpp.s"
-	cd /home/tungchiahui/mysource/ros2src/demo_test/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tungchiahui/mysource/ros2src/demo_test/main.cpp -o CMakeFiles/main.dir/__/main.cpp.s
+	cd /home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/main.cpp -o CMakeFiles/main.dir/__/main.cpp.s
 
 src/CMakeFiles/main.dir/testFunc.cpp.o: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/testFunc.cpp.o: ../src/testFunc.cpp
 src/CMakeFiles/main.dir/testFunc.cpp.o: src/CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tungchiahui/mysource/ros2src/demo_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/main.dir/testFunc.cpp.o"
-	cd /home/tungchiahui/mysource/ros2src/demo_test/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/main.dir/testFunc.cpp.o -MF CMakeFiles/main.dir/testFunc.cpp.o.d -o CMakeFiles/main.dir/testFunc.cpp.o -c /home/tungchiahui/mysource/ros2src/demo_test/src/testFunc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/main.dir/testFunc.cpp.o"
+	cd /home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/main.dir/testFunc.cpp.o -MF CMakeFiles/main.dir/testFunc.cpp.o.d -o CMakeFiles/main.dir/testFunc.cpp.o -c /home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/src/testFunc.cpp
 
 src/CMakeFiles/main.dir/testFunc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/testFunc.cpp.i"
-	cd /home/tungchiahui/mysource/ros2src/demo_test/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tungchiahui/mysource/ros2src/demo_test/src/testFunc.cpp > CMakeFiles/main.dir/testFunc.cpp.i
+	cd /home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/src/testFunc.cpp > CMakeFiles/main.dir/testFunc.cpp.i
 
 src/CMakeFiles/main.dir/testFunc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/testFunc.cpp.s"
-	cd /home/tungchiahui/mysource/ros2src/demo_test/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tungchiahui/mysource/ros2src/demo_test/src/testFunc.cpp -o CMakeFiles/main.dir/testFunc.cpp.s
+	cd /home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/src/testFunc.cpp -o CMakeFiles/main.dir/testFunc.cpp.s
 
 # Object files for target main
 main_OBJECTS = \
@@ -109,18 +109,18 @@ main_EXTERNAL_OBJECTS =
 ../bin/main: src/CMakeFiles/main.dir/testFunc.cpp.o
 ../bin/main: src/CMakeFiles/main.dir/build.make
 ../bin/main: src/CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tungchiahui/mysource/ros2src/demo_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../bin/main"
-	cd /home/tungchiahui/mysource/ros2src/demo_test/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../bin/main"
+	cd /home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/main.dir/build: ../bin/main
 .PHONY : src/CMakeFiles/main.dir/build
 
 src/CMakeFiles/main.dir/clean:
-	cd /home/tungchiahui/mysource/ros2src/demo_test/build/src && $(CMAKE_COMMAND) -P CMakeFiles/main.dir/cmake_clean.cmake
+	cd /home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/build/src && $(CMAKE_COMMAND) -P CMakeFiles/main.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/main.dir/clean
 
 src/CMakeFiles/main.dir/depend:
-	cd /home/tungchiahui/mysource/ros2src/demo_test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tungchiahui/mysource/ros2src/demo_test /home/tungchiahui/mysource/ros2src/demo_test/src /home/tungchiahui/mysource/ros2src/demo_test/build /home/tungchiahui/mysource/ros2src/demo_test/build/src /home/tungchiahui/mysource/ros2src/demo_test/build/src/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template /home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/src /home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/build /home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/build/src /home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/build/src/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/main.dir/depend
 

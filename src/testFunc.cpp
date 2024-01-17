@@ -3,5 +3,5 @@
 
 void func(void)
 {
-	std::cout << "VinciRobot!" << std::endl;
+	std::cout << "VinciRobot!你好" << std::endl;
 }

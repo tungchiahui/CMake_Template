@@ -1,6 +1,6 @@
 # README
 1. Project Name: Cmake_Template_Project
-2. Version: v0.5
+2. Version: v1.0
 3. State: Pre-Release
 4. Author: Tung Chia-hui
 5. Website: https://github.com/tungchiahui
