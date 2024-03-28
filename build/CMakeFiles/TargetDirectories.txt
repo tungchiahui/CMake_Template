@@ -1,5 +1,0 @@
-/home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/build/CMakeFiles/edit_cache.dir
-/home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/build/CMakeFiles/rebuild_cache.dir
-/home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/build/src/CMakeFiles/main.dir
-/home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/build/src/CMakeFiles/edit_cache.dir
-/home/tungchiahui/user/mysource/Cmake_Cpp/Cmake_Template/build/src/CMakeFiles/rebuild_cache.dir
