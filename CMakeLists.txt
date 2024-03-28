@@ -1,10 +1,10 @@
 cmake_minimum_required (VERSION 3.0)
 
-#生成compile_commands.json文件
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-
 # add_compile_options(-std=c++11 -g -Wall) 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall")
+
+#生成compile_commands.json文件
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 set(CMAKE_BUILD_TYPE Debug)
 
