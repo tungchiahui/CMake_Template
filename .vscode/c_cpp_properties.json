@@ -5,7 +5,6 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/inc",
-                //"/home/tungchiahui/user/applications/gcc-13.2/include/**",
                 "/usr/include/**"
             ],
             "defines": [],
