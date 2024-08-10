@@ -7,6 +7,6 @@
 6. E-mail: tungchiahui@gmail.com
 7. Organization: VinciRobot
 8. Date: 2023-03-20
-9. BUG: 
+9. Future: 
     1. Install_DIR do not be maked.
     2. Make_Log do not recorded.
