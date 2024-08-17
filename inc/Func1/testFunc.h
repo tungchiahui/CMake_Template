@@ -1,6 +1,14 @@
 #ifndef __TESTFUNC_H_
 #define __TESTFUNC_H_
 
-void func(void);
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+void funcc(void);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
