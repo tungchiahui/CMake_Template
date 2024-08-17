@@ -32,7 +32,21 @@ set_target_properties(${TARGET_NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE
 # 引用第三方库(例如引用Eigen3矩阵库)
 # 查找 库 的包
 find_package(Eigen3 REQUIRED)
-# 链接 库
+# 查找 库 头文件
 target_include_directories(${TARGET_NAME} PUBLIC ${EIGEN3_INCLUDE_DIRS})
 # 提示是否找到 库
 message(STATUS "Eigen3 include dirs: ${EIGEN3_INCLUDE_DIRS}")
+
+
+# 引用第三方库(例如引用OpenCV4库)
+# 查找 库 的包
+find_package(OpenCV REQUIRED)
+# 查找 库 头文件
+target_include_directories(${TARGET_NAME} PUBLIC ${OpenCV_INCLUDE_DIRS})
+# 链接 库
+target_link_libraries(${TARGET_NAME} PUBLIC ${OpenCV_LIBS})
+# 提示是否找到 库
+message(STATUS "OpenCV library status:")
+message(STATUS "> version: ${OpenCV_VERSION}")
+message(STATUS "> include: ${OpenCV_INCLUDE_DIRS}")
+message(STATUS "> libraries: ${OpenCV_LIBS}")
