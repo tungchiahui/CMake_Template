@@ -78,70 +78,130 @@ clean: src/clean
 # Directory level rules for directory src
 
 # Recursive "all" directory target.
-src/all: src/CMakeFiles/MY_DEMO.dir/all
-src/all: src/CMakeFiles/src_lib.dir/all
+src/all: src/CMakeFiles/demo1.dir/all
+src/all: src/Func1/all
+src/all: src/Matrix/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
-src/preinstall:
+src/preinstall: src/Func1/preinstall
+src/preinstall: src/Matrix/preinstall
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
-src/clean: src/CMakeFiles/MY_DEMO.dir/clean
-src/clean: src/CMakeFiles/src_lib.dir/clean
+src/clean: src/CMakeFiles/demo1.dir/clean
+src/clean: src/Func1/clean
+src/clean: src/Matrix/clean
 .PHONY : src/clean
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/MY_DEMO.dir
+# Directory level rules for directory src/Func1
 
-# All Build rule for target.
-src/CMakeFiles/MY_DEMO.dir/all: src/CMakeFiles/src_lib.dir/all
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MY_DEMO.dir/build.make src/CMakeFiles/MY_DEMO.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MY_DEMO.dir/build.make src/CMakeFiles/MY_DEMO.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tungchiahui/UserFloder/mysource/CMake_Template/build/CMakeFiles --progress-num=1,2 "Built target MY_DEMO"
-.PHONY : src/CMakeFiles/MY_DEMO.dir/all
+# Recursive "all" directory target.
+src/Func1/all: src/Func1/CMakeFiles/Func1_src_lib.dir/all
+.PHONY : src/Func1/all
 
-# Build rule for subdir invocation for target.
-src/CMakeFiles/MY_DEMO.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tungchiahui/UserFloder/mysource/CMake_Template/build/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/MY_DEMO.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tungchiahui/UserFloder/mysource/CMake_Template/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/MY_DEMO.dir/rule
+# Recursive "preinstall" directory target.
+src/Func1/preinstall:
+.PHONY : src/Func1/preinstall
 
-# Convenience name for target.
-MY_DEMO: src/CMakeFiles/MY_DEMO.dir/rule
-.PHONY : MY_DEMO
-
-# clean rule for target.
-src/CMakeFiles/MY_DEMO.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MY_DEMO.dir/build.make src/CMakeFiles/MY_DEMO.dir/clean
-.PHONY : src/CMakeFiles/MY_DEMO.dir/clean
+# Recursive "clean" directory target.
+src/Func1/clean: src/Func1/CMakeFiles/Func1_src_lib.dir/clean
+.PHONY : src/Func1/clean
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/src_lib.dir
+# Directory level rules for directory src/Matrix
+
+# Recursive "all" directory target.
+src/Matrix/all: src/Matrix/CMakeFiles/Matrix_src_lib.dir/all
+.PHONY : src/Matrix/all
+
+# Recursive "preinstall" directory target.
+src/Matrix/preinstall:
+.PHONY : src/Matrix/preinstall
+
+# Recursive "clean" directory target.
+src/Matrix/clean: src/Matrix/CMakeFiles/Matrix_src_lib.dir/clean
+.PHONY : src/Matrix/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/demo1.dir
 
 # All Build rule for target.
-src/CMakeFiles/src_lib.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/src_lib.dir/build.make src/CMakeFiles/src_lib.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/src_lib.dir/build.make src/CMakeFiles/src_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tungchiahui/UserFloder/mysource/CMake_Template/build/CMakeFiles --progress-num=3,4,5 "Built target src_lib"
-.PHONY : src/CMakeFiles/src_lib.dir/all
+src/CMakeFiles/demo1.dir/all: src/Func1/CMakeFiles/Func1_src_lib.dir/all
+src/CMakeFiles/demo1.dir/all: src/Matrix/CMakeFiles/Matrix_src_lib.dir/all
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo1.dir/build.make src/CMakeFiles/demo1.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo1.dir/build.make src/CMakeFiles/demo1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tungchiahui/UserFloder/mysource/CMake_Template/build/CMakeFiles --progress-num=5,6 "Built target demo1"
+.PHONY : src/CMakeFiles/demo1.dir/all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/src_lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tungchiahui/UserFloder/mysource/CMake_Template/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/src_lib.dir/all
+src/CMakeFiles/demo1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tungchiahui/UserFloder/mysource/CMake_Template/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/demo1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tungchiahui/UserFloder/mysource/CMake_Template/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/src_lib.dir/rule
+.PHONY : src/CMakeFiles/demo1.dir/rule
 
 # Convenience name for target.
-src_lib: src/CMakeFiles/src_lib.dir/rule
-.PHONY : src_lib
+demo1: src/CMakeFiles/demo1.dir/rule
+.PHONY : demo1
 
 # clean rule for target.
-src/CMakeFiles/src_lib.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/src_lib.dir/build.make src/CMakeFiles/src_lib.dir/clean
-.PHONY : src/CMakeFiles/src_lib.dir/clean
+src/CMakeFiles/demo1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo1.dir/build.make src/CMakeFiles/demo1.dir/clean
+.PHONY : src/CMakeFiles/demo1.dir/clean
+
+#=============================================================================
+# Target rules for target src/Func1/CMakeFiles/Func1_src_lib.dir
+
+# All Build rule for target.
+src/Func1/CMakeFiles/Func1_src_lib.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/Func1/CMakeFiles/Func1_src_lib.dir/build.make src/Func1/CMakeFiles/Func1_src_lib.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/Func1/CMakeFiles/Func1_src_lib.dir/build.make src/Func1/CMakeFiles/Func1_src_lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tungchiahui/UserFloder/mysource/CMake_Template/build/CMakeFiles --progress-num=1,2 "Built target Func1_src_lib"
+.PHONY : src/Func1/CMakeFiles/Func1_src_lib.dir/all
+
+# Build rule for subdir invocation for target.
+src/Func1/CMakeFiles/Func1_src_lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tungchiahui/UserFloder/mysource/CMake_Template/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Func1/CMakeFiles/Func1_src_lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tungchiahui/UserFloder/mysource/CMake_Template/build/CMakeFiles 0
+.PHONY : src/Func1/CMakeFiles/Func1_src_lib.dir/rule
+
+# Convenience name for target.
+Func1_src_lib: src/Func1/CMakeFiles/Func1_src_lib.dir/rule
+.PHONY : Func1_src_lib
+
+# clean rule for target.
+src/Func1/CMakeFiles/Func1_src_lib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/Func1/CMakeFiles/Func1_src_lib.dir/build.make src/Func1/CMakeFiles/Func1_src_lib.dir/clean
+.PHONY : src/Func1/CMakeFiles/Func1_src_lib.dir/clean
+
+#=============================================================================
+# Target rules for target src/Matrix/CMakeFiles/Matrix_src_lib.dir
+
+# All Build rule for target.
+src/Matrix/CMakeFiles/Matrix_src_lib.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/Matrix/CMakeFiles/Matrix_src_lib.dir/build.make src/Matrix/CMakeFiles/Matrix_src_lib.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/Matrix/CMakeFiles/Matrix_src_lib.dir/build.make src/Matrix/CMakeFiles/Matrix_src_lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tungchiahui/UserFloder/mysource/CMake_Template/build/CMakeFiles --progress-num=3,4 "Built target Matrix_src_lib"
+.PHONY : src/Matrix/CMakeFiles/Matrix_src_lib.dir/all
+
+# Build rule for subdir invocation for target.
+src/Matrix/CMakeFiles/Matrix_src_lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tungchiahui/UserFloder/mysource/CMake_Template/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Matrix/CMakeFiles/Matrix_src_lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tungchiahui/UserFloder/mysource/CMake_Template/build/CMakeFiles 0
+.PHONY : src/Matrix/CMakeFiles/Matrix_src_lib.dir/rule
+
+# Convenience name for target.
+Matrix_src_lib: src/Matrix/CMakeFiles/Matrix_src_lib.dir/rule
+.PHONY : Matrix_src_lib
+
+# clean rule for target.
+src/Matrix/CMakeFiles/Matrix_src_lib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/Matrix/CMakeFiles/Matrix_src_lib.dir/build.make src/Matrix/CMakeFiles/Matrix_src_lib.dir/clean
+.PHONY : src/Matrix/CMakeFiles/Matrix_src_lib.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

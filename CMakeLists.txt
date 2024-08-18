@@ -4,14 +4,14 @@ cmake_minimum_required (VERSION 3.10)
 
 # 创建一个名为CMake_demo的项目
 # project(<项目名>)
-project (CMake_demo)
+project (demo1)
 
 # 创建一个名为CMake_demo的项目并给予项目版本号
 # project(<项目名>)
 # project (CMake_demo VERSION 1.0)
 
 # 定义变量来存储目标名称
-set(TARGET_NAME MY_DEMO)
+set(TARGET_NAME ${PROJECT_NAME})
 
 # 用于给变量设置值
 # set(<变量名> <变量值>)
@@ -35,7 +35,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CMAKE_C_STANDARD_REQUIRED True)
 
 
-
 # 用于给变量设置值
 # set(<变量名> <变量值>)
 # 生成compile_commands.json文件(供Clangd使用)
@@ -44,6 +43,16 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 # 用于给变量设置值
 # set(<变量名> <变量值>)
 set(CMAKE_BUILD_TYPE Debug)
+
+# 设置install路径
+set(CMAKE_INSTALL_PREFIX ${CMAKE_SOURCE_DIR}/install)
+
+# 设置include安装路径
+set(USER_INSTALL_INCLUDE_DIR ${CMAKE_INSTALL_PREFIX}/include)
+# 设置bin安装路径
+set(USER_INSTALL_BIN_DIR ${CMAKE_INSTALL_PREFIX}/bin)
+# 设置lib安装路径
+set(USER_INSTALL_LIB_DIR ${CMAKE_INSTALL_PREFIX}/lib)
 
 # 设置日志保存路径
 # PROJECT_SOURCE_DIR：工程的根目录(调用project的CMakeLists.txt文件所在的目录)

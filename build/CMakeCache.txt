@@ -148,7 +148,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=CMake_demo
+CMAKE_PROJECT_NAME:STATIC=demo1
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -372,6 +372,15 @@ Eigen3_DIR:PATH=/usr/share/eigen3/cmake
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=/usr/local/lib/cmake/opencv4
 
+//Value Computed by CMake
+demo1_BINARY_DIR:STATIC=/home/tungchiahui/UserFloder/mysource/CMake_Template/build
+
+//Value Computed by CMake
+demo1_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+demo1_SOURCE_DIR:STATIC=/home/tungchiahui/UserFloder/mysource/CMake_Template
+
 
 ########################
 # INTERNAL cache entries
@@ -481,7 +490,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -12,6 +12,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.25.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.25.1/CMakeSystem.cmake"
   "/home/tungchiahui/UserFloder/mysource/CMake_Template/src/CMakeLists.txt"
+  "/home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/CMakeLists.txt"
+  "/home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/CMakeLists.txt"
   "/usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake"
   "/usr/local/lib/cmake/opencv4/OpenCVConfig.cmake"
   "/usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake"
@@ -57,10 +59,13 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/Func1/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/Matrix/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "src/CMakeFiles/MY_DEMO.dir/DependInfo.cmake"
-  "src/CMakeFiles/src_lib.dir/DependInfo.cmake"
+  "src/CMakeFiles/demo1.dir/DependInfo.cmake"
+  "src/Func1/CMakeFiles/Func1_src_lib.dir/DependInfo.cmake"
+  "src/Matrix/CMakeFiles/Matrix_src_lib.dir/DependInfo.cmake"
   )

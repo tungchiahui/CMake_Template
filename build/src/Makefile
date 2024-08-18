@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	cd /home/tungchiahui/UserFloder/mysource/CMake_Template/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/tungchiahui/UserFloder/mysource/CMake_Template/build/CMakeFiles /home/tungchiahui/UserFloder/mysource/CMake_Template/build/src//CMakeFiles/progress.marks
@@ -117,104 +162,42 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/MY_DEMO.dir/rule:
-	cd /home/tungchiahui/UserFloder/mysource/CMake_Template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/MY_DEMO.dir/rule
-.PHONY : src/CMakeFiles/MY_DEMO.dir/rule
+src/CMakeFiles/demo1.dir/rule:
+	cd /home/tungchiahui/UserFloder/mysource/CMake_Template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/demo1.dir/rule
+.PHONY : src/CMakeFiles/demo1.dir/rule
 
 # Convenience name for target.
-MY_DEMO: src/CMakeFiles/MY_DEMO.dir/rule
-.PHONY : MY_DEMO
+demo1: src/CMakeFiles/demo1.dir/rule
+.PHONY : demo1
 
 # fast build rule for target.
-MY_DEMO/fast:
-	cd /home/tungchiahui/UserFloder/mysource/CMake_Template/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MY_DEMO.dir/build.make src/CMakeFiles/MY_DEMO.dir/build
-.PHONY : MY_DEMO/fast
+demo1/fast:
+	cd /home/tungchiahui/UserFloder/mysource/CMake_Template/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo1.dir/build.make src/CMakeFiles/demo1.dir/build
+.PHONY : demo1/fast
 
-# Convenience name for target.
-src/CMakeFiles/src_lib.dir/rule:
-	cd /home/tungchiahui/UserFloder/mysource/CMake_Template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/src_lib.dir/rule
-.PHONY : src/CMakeFiles/src_lib.dir/rule
-
-# Convenience name for target.
-src_lib: src/CMakeFiles/src_lib.dir/rule
-.PHONY : src_lib
-
-# fast build rule for target.
-src_lib/fast:
-	cd /home/tungchiahui/UserFloder/mysource/CMake_Template/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src_lib.dir/build.make src/CMakeFiles/src_lib.dir/build
-.PHONY : src_lib/fast
-
-Func1/testFunc.o: Func1/testFunc.c.o
-.PHONY : Func1/testFunc.o
+main.o: main.cpp.o
+.PHONY : main.o
 
 # target to build an object file
-Func1/testFunc.c.o:
-	cd /home/tungchiahui/UserFloder/mysource/CMake_Template/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src_lib.dir/build.make src/CMakeFiles/src_lib.dir/Func1/testFunc.c.o
-.PHONY : Func1/testFunc.c.o
+main.cpp.o:
+	cd /home/tungchiahui/UserFloder/mysource/CMake_Template/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo1.dir/build.make src/CMakeFiles/demo1.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-Func1/testFunc.i: Func1/testFunc.c.i
-.PHONY : Func1/testFunc.i
-
-# target to preprocess a source file
-Func1/testFunc.c.i:
-	cd /home/tungchiahui/UserFloder/mysource/CMake_Template/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src_lib.dir/build.make src/CMakeFiles/src_lib.dir/Func1/testFunc.c.i
-.PHONY : Func1/testFunc.c.i
-
-Func1/testFunc.s: Func1/testFunc.c.s
-.PHONY : Func1/testFunc.s
-
-# target to generate assembly for a file
-Func1/testFunc.c.s:
-	cd /home/tungchiahui/UserFloder/mysource/CMake_Template/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src_lib.dir/build.make src/CMakeFiles/src_lib.dir/Func1/testFunc.c.s
-.PHONY : Func1/testFunc.c.s
-
-Matrix/eigen3_test.o: Matrix/eigen3_test.cpp.o
-.PHONY : Matrix/eigen3_test.o
-
-# target to build an object file
-Matrix/eigen3_test.cpp.o:
-	cd /home/tungchiahui/UserFloder/mysource/CMake_Template/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src_lib.dir/build.make src/CMakeFiles/src_lib.dir/Matrix/eigen3_test.cpp.o
-.PHONY : Matrix/eigen3_test.cpp.o
-
-Matrix/eigen3_test.i: Matrix/eigen3_test.cpp.i
-.PHONY : Matrix/eigen3_test.i
+main.i: main.cpp.i
+.PHONY : main.i
 
 # target to preprocess a source file
-Matrix/eigen3_test.cpp.i:
-	cd /home/tungchiahui/UserFloder/mysource/CMake_Template/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src_lib.dir/build.make src/CMakeFiles/src_lib.dir/Matrix/eigen3_test.cpp.i
-.PHONY : Matrix/eigen3_test.cpp.i
+main.cpp.i:
+	cd /home/tungchiahui/UserFloder/mysource/CMake_Template/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo1.dir/build.make src/CMakeFiles/demo1.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-Matrix/eigen3_test.s: Matrix/eigen3_test.cpp.s
-.PHONY : Matrix/eigen3_test.s
-
-# target to generate assembly for a file
-Matrix/eigen3_test.cpp.s:
-	cd /home/tungchiahui/UserFloder/mysource/CMake_Template/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src_lib.dir/build.make src/CMakeFiles/src_lib.dir/Matrix/eigen3_test.cpp.s
-.PHONY : Matrix/eigen3_test.cpp.s
-
-__/main.o: __/main.cpp.o
-.PHONY : __/main.o
-
-# target to build an object file
-__/main.cpp.o:
-	cd /home/tungchiahui/UserFloder/mysource/CMake_Template/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MY_DEMO.dir/build.make src/CMakeFiles/MY_DEMO.dir/__/main.cpp.o
-.PHONY : __/main.cpp.o
-
-__/main.i: __/main.cpp.i
-.PHONY : __/main.i
-
-# target to preprocess a source file
-__/main.cpp.i:
-	cd /home/tungchiahui/UserFloder/mysource/CMake_Template/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MY_DEMO.dir/build.make src/CMakeFiles/MY_DEMO.dir/__/main.cpp.i
-.PHONY : __/main.cpp.i
-
-__/main.s: __/main.cpp.s
-.PHONY : __/main.s
+main.s: main.cpp.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-__/main.cpp.s:
-	cd /home/tungchiahui/UserFloder/mysource/CMake_Template/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MY_DEMO.dir/build.make src/CMakeFiles/MY_DEMO.dir/__/main.cpp.s
-.PHONY : __/main.cpp.s
+main.cpp.s:
+	cd /home/tungchiahui/UserFloder/mysource/CMake_Template/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo1.dir/build.make src/CMakeFiles/demo1.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -223,18 +206,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... MY_DEMO"
-	@echo "... src_lib"
-	@echo "... Func1/testFunc.o"
-	@echo "... Func1/testFunc.i"
-	@echo "... Func1/testFunc.s"
-	@echo "... Matrix/eigen3_test.o"
-	@echo "... Matrix/eigen3_test.i"
-	@echo "... Matrix/eigen3_test.s"
-	@echo "... __/main.o"
-	@echo "... __/main.i"
-	@echo "... __/main.s"
+	@echo "... demo1"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

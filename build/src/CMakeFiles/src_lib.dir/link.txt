@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -g -shared -Wl,-soname,libsrc_lib.so -o libsrc_lib.so CMakeFiles/src_lib.dir/Func1/testFunc.c.o CMakeFiles/src_lib.dir/Matrix/eigen3_test.cpp.o 
