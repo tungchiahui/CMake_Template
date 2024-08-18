@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/tungchiahui/UserFloder/mysource/CMake_Template/build/src",
+  "command": "/usr/bin/cc -Dsrc_lib_EXPORTS -I/home/tungchiahui/UserFloder/mysource/CMake_Template/inc -g -fPIC -std=gnu11 -o CMakeFiles/src_lib.dir/Func1/testFunc.c.o -c /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/testFunc.c",
+  "file": "/home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/testFunc.c"
+},
+{
+  "directory": "/home/tungchiahui/UserFloder/mysource/CMake_Template/build/src",
+  "command": "/usr/bin/c++ -Dsrc_lib_EXPORTS -I/home/tungchiahui/UserFloder/mysource/CMake_Template/inc -g -fPIC -std=gnu++14 -o CMakeFiles/src_lib.dir/Matrix/eigen3_test.cpp.o -c /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/eigen3_test.cpp",
+  "file": "/home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/eigen3_test.cpp"
+},
+{
+  "directory": "/home/tungchiahui/UserFloder/mysource/CMake_Template/build/src",
+  "command": "/usr/bin/c++  -I/usr/include/eigen3 -I/home/tungchiahui/UserFloder/mysource/CMake_Template/inc -isystem /usr/local/include/opencv4 -g -std=gnu++14 -o CMakeFiles/MY_DEMO.dir/__/main.cpp.o -c /home/tungchiahui/UserFloder/mysource/CMake_Template/main.cpp",
+  "file": "/home/tungchiahui/UserFloder/mysource/CMake_Template/main.cpp"
+}
+]

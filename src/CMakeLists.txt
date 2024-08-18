@@ -13,11 +13,12 @@ message(STATUS "HEADER_LIST: ${HEADER_LIST}")
 
 # 利用指定的源文件在项目中添加可执行文件 (该命令必须靠前)
 # add_executable(<可执行文件名> <源文件列表>)   源文件可以有多个，用空格隔开
-add_executable(${TARGET_NAME} ${CMAKE_SOURCE_DIR}/main.cpp ${SRC_LIST})
+add_executable(${TARGET_NAME} ${CMAKE_SOURCE_DIR}/main.cpp)
+
 
 # 给指定的目标添加头文件搜索路径(只需要一个目录即可，不需要完整的绝对路径,所以用不到${HEADER_LIST})(还有一个叫include_directories，类似于全局变量，一般大工程不用)
 # target_include_directories(<target> <INTERFACE|PUBLIC|PRIVATE> <dir1 dir2 ...>)
-target_include_directories(${TARGET_NAME} PUBLIC ${CMAKE_SOURCE_DIR}/inc)
+# target_include_directories(${TARGET_NAME} PUBLIC ${CMAKE_SOURCE_DIR}/inc)
 
 # 指定可执行文件的输出路径
 # CMake 中用于设置目标属性的命令。通过这个命令，你可以为特定目标配置各种属性
@@ -27,6 +28,14 @@ target_include_directories(${TARGET_NAME} PUBLIC ${CMAKE_SOURCE_DIR}/inc)
 # property：目标的属性名 (RUNTIME_OUTPUT_DIRECTORY 是一个属性名，用于指定可执行文件的输出目录)
 # value：属性的值 (${CMAKE_SOURCE_DIR}/bin 是这个属性的值，指定了输出目录的位置)
 set_target_properties(${TARGET_NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
+
+
+# 添加库 将${SRC_LIST}中的库全部创建为src_lib动态库
+add_library(src_lib SHARED ${SRC_LIST})
+# 将动态库src_lib与目标进行链接
+target_link_libraries(${TARGET_NAME} PUBLIC src_lib)
+# 使动态库能够正常找到他自己的头文件
+target_include_directories(src_lib PUBLIC ${CMAKE_SOURCE_DIR}/inc)
 
 
 # 引用第三方库(例如引用Eigen3矩阵库)

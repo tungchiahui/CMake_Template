@@ -1,0 +1,6 @@
+/home/tungchiahui/UserFloder/mysource/CMake_Template/build/CMakeFiles/edit_cache.dir
+/home/tungchiahui/UserFloder/mysource/CMake_Template/build/CMakeFiles/rebuild_cache.dir
+/home/tungchiahui/UserFloder/mysource/CMake_Template/build/src/CMakeFiles/MY_DEMO.dir
+/home/tungchiahui/UserFloder/mysource/CMake_Template/build/src/CMakeFiles/src_lib.dir
+/home/tungchiahui/UserFloder/mysource/CMake_Template/build/src/CMakeFiles/edit_cache.dir
+/home/tungchiahui/UserFloder/mysource/CMake_Template/build/src/CMakeFiles/rebuild_cache.dir
