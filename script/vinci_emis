@@ -44,13 +44,14 @@ elif [ "$COMMAND" == "clean" ]; then
     # 获取脚本所在的目录
     SCRIPT_DIR=$(dirname "$(realpath "$0")")
 
-    # 设置 build 和 install 目录（相对于项目根目录）
+    # 设置 build , install 和 log 目录（相对于项目根目录）
     BUILD_DIR="${SCRIPT_DIR}/../build"
     INSTALL_DIR="${SCRIPT_DIR}/../install"
+    LOG_DIR="${SCRIPT_DIR}/../log"
 
     # 删除 build 和 install 目录下的所有文件
     echo "Cleaning up build and install directories..."
-    rm -rf "${BUILD_DIR:?}"/* "${INSTALL_DIR:?}"/*
+    rm -rf "${BUILD_DIR:?}"/* "${INSTALL_DIR:?}"/* "${LOG_DIR:?}"/*
 
     echo "Clean up completed."
 fi
