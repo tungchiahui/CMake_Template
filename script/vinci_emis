@@ -49,8 +49,8 @@ elif [ "$COMMAND" == "clean" ]; then
     INSTALL_DIR="${SCRIPT_DIR}/../install"
     LOG_DIR="${SCRIPT_DIR}/../log"
 
-    # 删除 build 和 install 目录下的所有文件
-    echo "Cleaning up build and install directories..."
+    # 删除 build , install 和 log 目录下的所有文件
+    echo "Cleaning up build , install and log directories..."
     rm -rf "${BUILD_DIR:?}"/* "${INSTALL_DIR:?}"/* "${LOG_DIR:?}"/*
 
     echo "Clean up completed."
