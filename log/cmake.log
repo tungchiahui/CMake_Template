@@ -1,1 +1,273 @@
 
+Build started at: Tuesday, August 20, 2024 AM12:31:49 HKT
+-- it's Func1:
+-- Func1_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/src/testFunc.c
+-- Func1_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/inc/testFunc.h
+-- it's Matrix:
+-- Matrix_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/src/eigen3_test.cpp
+-- Matrix_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/inc/eigen3_test.hpp
+-- Eigen3 include dirs: /usr/include/eigen3
+-- OpenCV library status:
+-- > version: 4.10.0
+-- > include: /usr/local/include/opencv4
+-- > libraries: opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cudaarithm;opencv_cudabgsegm;opencv_cudacodec;opencv_cudafeatures2d;opencv_cudafilters;opencv_cudaimgproc;opencv_cudalegacy;opencv_cudaobjdetect;opencv_cudaoptflow;opencv_cudastereo;opencv_cudawarping;opencv_cudev;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_signal;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tungchiahui/UserFloder/mysource/CMake_Template/build
+
+Build started at: Tuesday, August 20, 2024 AM12:34:53 HKT
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- it's Func1:
+-- Func1_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/src/testFunc.c
+-- Func1_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/inc/testFunc.h
+-- it's Matrix:
+-- Matrix_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/src/eigen3_test.cpp
+-- Matrix_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/inc/eigen3_test.hpp
+-- Eigen3 include dirs: /usr/include/eigen3
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found CUDA: /usr/local/cuda-12.4 (found suitable exact version "12.4") 
+-- Found OpenCV: /usr/local (found version "4.10.0") 
+-- OpenCV library status:
+-- > version: 4.10.0
+-- > include: /usr/local/include/opencv4
+-- > libraries: opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cudaarithm;opencv_cudabgsegm;opencv_cudacodec;opencv_cudafeatures2d;opencv_cudafilters;opencv_cudaimgproc;opencv_cudalegacy;opencv_cudaobjdetect;opencv_cudaoptflow;opencv_cudastereo;opencv_cudawarping;opencv_cudev;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_signal;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tungchiahui/UserFloder/mysource/CMake_Template/build
+
+Build started at: Tuesday, August 20, 2024 AM12:35:14 HKT
+-- it's Func1:
+-- Func1_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/src/testFunc.c
+-- Func1_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/inc/testFunc.h
+-- it's Matrix:
+-- Matrix_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/src/eigen3_test.cpp
+-- Matrix_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/inc/eigen3_test.hpp
+-- Eigen3 include dirs: /usr/include/eigen3
+-- OpenCV library status:
+-- > version: 4.10.0
+-- > include: /usr/local/include/opencv4
+-- > libraries: opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cudaarithm;opencv_cudabgsegm;opencv_cudacodec;opencv_cudafeatures2d;opencv_cudafilters;opencv_cudaimgproc;opencv_cudalegacy;opencv_cudaobjdetect;opencv_cudaoptflow;opencv_cudastereo;opencv_cudawarping;opencv_cudev;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_signal;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tungchiahui/UserFloder/mysource/CMake_Template/build
+
+Build started at: Tuesday, August 20, 2024 AM12:36:14 HKT
+-- it's Func1:
+-- Func1_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/src/testFunc.c
+-- Func1_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/inc/testFunc.h
+-- it's Matrix:
+-- Matrix_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/src/eigen3_test.cpp
+-- Matrix_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/inc/eigen3_test.hpp
+-- Eigen3 include dirs: /usr/include/eigen3
+-- OpenCV library status:
+-- > version: 4.10.0
+-- > include: /usr/local/include/opencv4
+-- > libraries: opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cudaarithm;opencv_cudabgsegm;opencv_cudacodec;opencv_cudafeatures2d;opencv_cudafilters;opencv_cudaimgproc;opencv_cudalegacy;opencv_cudaobjdetect;opencv_cudaoptflow;opencv_cudastereo;opencv_cudawarping;opencv_cudev;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_signal;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tungchiahui/UserFloder/mysource/CMake_Template/build
+
+Build started at: Tuesday, August 20, 2024 AM12:41:57 HKT
+-- it's Func1:
+-- Func1_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/src/testFunc.c
+-- Func1_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/inc/testFunc.h
+-- it's Matrix:
+-- Matrix_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/src/eigen3_test.cpp
+-- Matrix_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/inc/eigen3_test.hpp
+-- Eigen3 include dirs: /usr/include/eigen3
+-- OpenCV library status:
+-- > version: 4.10.0
+-- > include: /usr/local/include/opencv4
+-- > libraries: opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cudaarithm;opencv_cudabgsegm;opencv_cudacodec;opencv_cudafeatures2d;opencv_cudafilters;opencv_cudaimgproc;opencv_cudalegacy;opencv_cudaobjdetect;opencv_cudaoptflow;opencv_cudastereo;opencv_cudawarping;opencv_cudev;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_signal;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tungchiahui/UserFloder/mysource/CMake_Template/build
+
+Build started at: Tuesday, August 20, 2024 AM12:42:25 HKT
+-- it's Func1:
+-- Func1_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/src/testFunc.c
+-- Func1_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/inc/testFunc.h
+-- it's Matrix:
+-- Matrix_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/src/eigen3_test.cpp
+-- Matrix_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/inc/eigen3_test.hpp
+-- Eigen3 include dirs: /usr/include/eigen3
+-- OpenCV library status:
+-- > version: 4.10.0
+-- > include: /usr/local/include/opencv4
+-- > libraries: opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cudaarithm;opencv_cudabgsegm;opencv_cudacodec;opencv_cudafeatures2d;opencv_cudafilters;opencv_cudaimgproc;opencv_cudalegacy;opencv_cudaobjdetect;opencv_cudaoptflow;opencv_cudastereo;opencv_cudawarping;opencv_cudev;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_signal;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tungchiahui/UserFloder/mysource/CMake_Template/build
+
+Build started at: Tuesday, August 20, 2024 AM12:42:40 HKT
+-- it's Func1:
+-- Func1_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/src/testFunc.c
+-- Func1_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/inc/testFunc.h
+-- it's Matrix:
+-- Matrix_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/src/eigen3_test.cpp
+-- Matrix_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/inc/eigen3_test.hpp
+-- Eigen3 include dirs: /usr/include/eigen3
+-- OpenCV library status:
+-- > version: 4.10.0
+-- > include: /usr/local/include/opencv4
+-- > libraries: opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cudaarithm;opencv_cudabgsegm;opencv_cudacodec;opencv_cudafeatures2d;opencv_cudafilters;opencv_cudaimgproc;opencv_cudalegacy;opencv_cudaobjdetect;opencv_cudaoptflow;opencv_cudastereo;opencv_cudawarping;opencv_cudev;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_signal;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tungchiahui/UserFloder/mysource/CMake_Template/build
+
+Build started at: Tuesday, August 20, 2024 AM12:45:44 HKT
+-- it's Func1:
+-- Func1_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/src/testFunc.c
+-- Func1_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/inc/testFunc.h
+-- it's Matrix:
+-- Matrix_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/src/eigen3_test.cpp
+-- Matrix_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/inc/eigen3_test.hpp
+-- Eigen3 include dirs: /usr/include/eigen3
+-- OpenCV library status:
+-- > version: 4.10.0
+-- > include: /usr/local/include/opencv4
+-- > libraries: opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cudaarithm;opencv_cudabgsegm;opencv_cudacodec;opencv_cudafeatures2d;opencv_cudafilters;opencv_cudaimgproc;opencv_cudalegacy;opencv_cudaobjdetect;opencv_cudaoptflow;opencv_cudastereo;opencv_cudawarping;opencv_cudev;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_signal;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tungchiahui/UserFloder/mysource/CMake_Template/build
+
+Build started at: Tuesday, August 20, 2024 AM12:48:42 HKT
+-- it's Func1:
+-- Func1_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/src/testFunc.c
+-- Func1_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/inc/testFunc.h
+-- it's Matrix:
+-- Matrix_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/src/eigen3_test.cpp
+-- Matrix_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/inc/eigen3_test.hpp
+-- Eigen3 include dirs: /usr/include/eigen3
+-- OpenCV library status:
+-- > version: 4.10.0
+-- > include: /usr/local/include/opencv4
+-- > libraries: opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cudaarithm;opencv_cudabgsegm;opencv_cudacodec;opencv_cudafeatures2d;opencv_cudafilters;opencv_cudaimgproc;opencv_cudalegacy;opencv_cudaobjdetect;opencv_cudaoptflow;opencv_cudastereo;opencv_cudawarping;opencv_cudev;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_signal;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tungchiahui/UserFloder/mysource/CMake_Template/build
+
+Build started at: Tuesday, August 20, 2024 AM12:48:55 HKT
+-- it's Func1:
+-- Func1_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/src/testFunc.c
+-- Func1_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/inc/testFunc.h
+-- it's Matrix:
+-- Matrix_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/src/eigen3_test.cpp
+-- Matrix_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/inc/eigen3_test.hpp
+-- Eigen3 include dirs: /usr/include/eigen3
+-- OpenCV library status:
+-- > version: 4.10.0
+-- > include: /usr/local/include/opencv4
+-- > libraries: opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cudaarithm;opencv_cudabgsegm;opencv_cudacodec;opencv_cudafeatures2d;opencv_cudafilters;opencv_cudaimgproc;opencv_cudalegacy;opencv_cudaobjdetect;opencv_cudaoptflow;opencv_cudastereo;opencv_cudawarping;opencv_cudev;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_signal;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tungchiahui/UserFloder/mysource/CMake_Template/build
+
+Build started at: Tuesday, August 20, 2024 AM12:49:35 HKT
+-- it's Func1:
+-- Func1_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/src/testFunc.c
+-- Func1_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/inc/testFunc.h
+-- it's Matrix:
+-- Matrix_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/src/eigen3_test.cpp
+-- Matrix_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/inc/eigen3_test.hpp
+-- Eigen3 include dirs: /usr/include/eigen3
+-- OpenCV library status:
+-- > version: 4.10.0
+-- > include: /usr/local/include/opencv4
+-- > libraries: opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cudaarithm;opencv_cudabgsegm;opencv_cudacodec;opencv_cudafeatures2d;opencv_cudafilters;opencv_cudaimgproc;opencv_cudalegacy;opencv_cudaobjdetect;opencv_cudaoptflow;opencv_cudastereo;opencv_cudawarping;opencv_cudev;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_signal;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tungchiahui/UserFloder/mysource/CMake_Template/build
+
+Build started at: Tuesday, August 20, 2024 AM12:50:00 HKT
+-- it's Func1:
+-- Func1_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/src/testFunc.c
+-- Func1_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/inc/testFunc.h
+-- it's Matrix:
+-- Matrix_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/src/eigen3_test.cpp
+-- Matrix_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/inc/eigen3_test.hpp
+-- Eigen3 include dirs: /usr/include/eigen3
+-- OpenCV library status:
+-- > version: 4.10.0
+-- > include: /usr/local/include/opencv4
+-- > libraries: opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cudaarithm;opencv_cudabgsegm;opencv_cudacodec;opencv_cudafeatures2d;opencv_cudafilters;opencv_cudaimgproc;opencv_cudalegacy;opencv_cudaobjdetect;opencv_cudaoptflow;opencv_cudastereo;opencv_cudawarping;opencv_cudev;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_signal;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tungchiahui/UserFloder/mysource/CMake_Template/build
+
+Build started at: Tuesday, August 20, 2024 AM12:51:32 HKT
+-- it's Func1:
+-- Func1_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/src/testFunc.c
+-- Func1_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/inc/testFunc.h
+-- it's Matrix:
+-- Matrix_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/src/eigen3_test.cpp
+-- Matrix_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/inc/eigen3_test.hpp
+-- Eigen3 include dirs: /usr/include/eigen3
+-- OpenCV library status:
+-- > version: 4.10.0
+-- > include: /usr/local/include/opencv4
+-- > libraries: opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cudaarithm;opencv_cudabgsegm;opencv_cudacodec;opencv_cudafeatures2d;opencv_cudafilters;opencv_cudaimgproc;opencv_cudalegacy;opencv_cudaobjdetect;opencv_cudaoptflow;opencv_cudastereo;opencv_cudawarping;opencv_cudev;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_signal;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tungchiahui/UserFloder/mysource/CMake_Template/build
+
+Build started at: Tuesday, August 20, 2024 AM12:53:24 HKT
+-- it's Func1:
+-- Func1_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/src/testFunc.c
+-- Func1_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/inc/testFunc.h
+-- it's Matrix:
+-- Matrix_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/src/eigen3_test.cpp
+-- Matrix_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/inc/eigen3_test.hpp
+-- Eigen3 include dirs: /usr/include/eigen3
+-- OpenCV library status:
+-- > version: 4.10.0
+-- > include: /usr/local/include/opencv4
+-- > libraries: opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cudaarithm;opencv_cudabgsegm;opencv_cudacodec;opencv_cudafeatures2d;opencv_cudafilters;opencv_cudaimgproc;opencv_cudalegacy;opencv_cudaobjdetect;opencv_cudaoptflow;opencv_cudastereo;opencv_cudawarping;opencv_cudev;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_signal;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tungchiahui/UserFloder/mysource/CMake_Template/build
+
+Build started at: Tuesday, August 20, 2024 AM12:53:45 HKT
+-- it's Func1:
+-- Func1_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/src/testFunc.c
+-- Func1_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/inc/testFunc.h
+-- it's Matrix:
+-- Matrix_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/src/eigen3_test.cpp
+-- Matrix_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/inc/eigen3_test.hpp
+-- Eigen3 include dirs: /usr/include/eigen3
+-- OpenCV library status:
+-- > version: 4.10.0
+-- > include: /usr/local/include/opencv4
+-- > libraries: opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cudaarithm;opencv_cudabgsegm;opencv_cudacodec;opencv_cudafeatures2d;opencv_cudafilters;opencv_cudaimgproc;opencv_cudalegacy;opencv_cudaobjdetect;opencv_cudaoptflow;opencv_cudastereo;opencv_cudawarping;opencv_cudev;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_signal;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tungchiahui/UserFloder/mysource/CMake_Template/build
+
+Build started at: Tuesday, August 20, 2024 AM12:53:52 HKT
+-- it's Func1:
+-- Func1_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/src/testFunc.c
+-- Func1_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Func1/inc/testFunc.h
+-- it's Matrix:
+-- Matrix_SRC_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/src/eigen3_test.cpp
+-- Matrix_HEADER_LIST: /home/tungchiahui/UserFloder/mysource/CMake_Template/src/Matrix/inc/eigen3_test.hpp
+-- Eigen3 include dirs: /usr/include/eigen3
+-- OpenCV library status:
+-- > version: 4.10.0
+-- > include: /usr/local/include/opencv4
+-- > libraries: opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cudaarithm;opencv_cudabgsegm;opencv_cudacodec;opencv_cudafeatures2d;opencv_cudafilters;opencv_cudaimgproc;opencv_cudalegacy;opencv_cudaobjdetect;opencv_cudaoptflow;opencv_cudastereo;opencv_cudawarping;opencv_cudev;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_signal;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tungchiahui/UserFloder/mysource/CMake_Template/build
