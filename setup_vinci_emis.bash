@@ -1,1 +1,0 @@
-/home/tungchiahui/UserFloder/mysource/CMake_Template/script/setup_vinci_emis.bash
