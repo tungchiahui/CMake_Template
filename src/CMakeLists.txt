@@ -25,6 +25,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 # property：目标的属性名 (RUNTIME_OUTPUT_DIRECTORY 是一个属性名，用于指定可执行文件的输出目录)
 # value：属性的值 (${CMAKE_SOURCE_DIR}/bin 是这个属性的值，指定了输出目录的位置)
 set_target_properties(${TARGET_NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${USER_INSTALL_BIN_DIR}/run_temp)
+# 安装二进制文件
 install(TARGETS ${TARGET_NAME} DESTINATION ${USER_INSTALL_BIN_DIR})
 
 
@@ -34,6 +35,10 @@ install(TARGETS ${TARGET_NAME} DESTINATION ${USER_INSTALL_BIN_DIR})
 add_subdirectory(Func1)
 # 将动态库src_lib与目标进行链接
 target_link_libraries(${TARGET_NAME} PUBLIC Func1_src_lib)
+# 安装  动态库
+install(TARGETS Func1_src_lib DESTINATION lib)
+
+
 
 
 # 为当前项目添加子目录。子目录当中必须包含一个CMakeLists.txt文件，其中可以不写cmake_minimum_required与project。
@@ -41,3 +46,5 @@ target_link_libraries(${TARGET_NAME} PUBLIC Func1_src_lib)
 add_subdirectory(Matrix)
 # 将动态库src_lib与目标进行链接
 target_link_libraries(${TARGET_NAME} PUBLIC Matrix_src_lib)
+# 安装  动态库
+install(TARGETS Matrix_src_lib DESTINATION lib)

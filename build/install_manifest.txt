@@ -1,3 +1,0 @@
-/home/tungchiahui/UserFloder/mysource/CMake_Template/install/bin/demo1
-/home/tungchiahui/UserFloder/mysource/CMake_Template/install/include/Func1/testFunc.h
-/home/tungchiahui/UserFloder/mysource/CMake_Template/install/include/Matrix/eigen3_test.hpp
