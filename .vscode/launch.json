@@ -8,14 +8,14 @@
             "program": "${workspaceFolder}/install/bin/${input:binaryName}",   //运行二进制文件
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${fileDirname}",
+            "cwd": "${workspaceFolder}/build",    //需要进入到我们执行tasks任务的文件夹中
             "environment": [    //确保环境正常(库环境被成功找到)
                 {
                     "name": "LD_LIBRARY_PATH",
                     "value": "${workspaceFolder}/install/lib"
                 }
             ],
-            "externalConsole": true,   //开启外部终端
+            "externalConsole": false,   //开启外部终端
             "MIMode": "gdb",
             "setupCommands": [
                 {
