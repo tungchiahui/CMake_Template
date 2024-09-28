@@ -1,4 +1,7 @@
 # README
+
+[中文](README-zh_CN.md) | English
+
 1. Project Name: CMake_Template_Project
 2. Version: v2.0
 3. State: Pre-Release
