@@ -19,7 +19,7 @@
 ##### For those who need to use scripts, please refer to the script folder.
 
 
-# How to compile and run program instructions for the project
+# How to build and run program instructions for the project
 
 
 ## 1. `Regular command line operation`
