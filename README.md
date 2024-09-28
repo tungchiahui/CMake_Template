@@ -19,20 +19,20 @@
 ##### For those who need to use scripts, please refer to the script folder.
 
 
-# 项目如何编译、运行程序说明
+# How to compile and run program instructions for the project
 
 
-## 1. `常规命令行运行`
+## 1. `Regular command line operation`
 
-### 功能
+### Function
 
-- CMake生成Makefiles等编译文件。
-- MakeFiles生成bin，lib等文件。
-- 加载lib环境，运行二进制程序。
+- CMake generates compiled files such as Makefiles.
+- MakeFiles generates bin, lib, and other files.
+- Load the lib environment and run the binary program.
 
-### 使用方法
+### Usage Method
 
-1. **编译**
+1. **Build**
 
    使用以下命令编译出二进制文件：
 
@@ -46,7 +46,7 @@
 
 
 
-2. **运行程序**
+2. **RUN**
 
    使用以下命令运行二进制文件：
 
@@ -58,22 +58,22 @@
     # 运行二进制程序(demo1换成对应的二进制文件名)
     ../install/bin/demo1
 
-## 2. `VScode任务运行`
+## 2. `VScode Task Launch`
 
-### 功能
+### Function
 
-- 用VScode强大的任务功能一键CMake,MakeFiles，加载lib环境以及运行二进制程序。
-- 可以使用该方法进行Debug。
+- Use VScode's powerful task function to easily perform one click tasks such as CMake, MakeFiles, loading lib environment, and running binary programs.
+- This method can be used for debugging.
 
-### 如何使用
+### Usage Method
 
-1. **点击Run**
+1. **Click Run**
 
    直接点击VScode的Run即可，注意，如果有报错，需要去log文件夹下查看对应的.log文件来寻找错误，或者打断点Debug。
 
 
-## 3. `脚本方式运行`
+## 3. `Script Method`
 
-### 功能
+### Fuction
 
 - 详见script文件夹下的Markdown。
