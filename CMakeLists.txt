@@ -60,6 +60,14 @@ set(USER_INSTALL_LIB_DIR ${CMAKE_INSTALL_PREFIX}/lib)
 set(LOG_DIR ${CMAKE_SOURCE_DIR}/log)
 file(MAKE_DIRECTORY ${LOG_DIR})           # 创建日志保存目录（若不存在)
 
+# 作用是自动加载lib
+# 设置安装后的 RPATH
+set(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
+# 构建时使用安装后的 RPATH
+set(CMAKE_BUILD_WITH_INSTALL_RPATH TRUE)
+# 自动添加链接路径到 RPATH
+set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
+
 # 为当前项目添加子目录。子目录当中必须包含一个CMakeLists.txt文件，其中可以不写cmake_minimum_required与project。
 # add_subdirectory(<源文件子目录路径>)
 add_subdirectory(src)
