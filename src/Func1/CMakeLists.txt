@@ -21,18 +21,18 @@ add_library(${PREFIX}_src_lib SHARED ${${PREFIX}_SRC_LIST})
 install(FILES ${${PREFIX}_HEADER_LIST} DESTINATION ${CMAKE_INSTALL_PREFIX}/include/${PREFIX})
 
 
-# 已经在Matrix功能包下引用了Opencv4库，注意不要把目标名弄重复了，不然会报错，下面我修改为了opencv_lib2。
+# 已经在Matrix功能包下引用了Opencv4库，注意不要把目标名弄重复了，不然会报错，下面我修改为了${PREFIX}_opencv_lib。
 # 引用第三方库(例如引用OpenCV4库)
 # 查找 库 的包
 find_package(OpenCV REQUIRED)
 # 创建一个INTERFACE库(创建了一个不包含源代码的目标，专门用于传递编译选项、包含路径和链接库。)
-add_library(opencv_lib2 INTERFACE)
+add_library(${PREFIX}_opencv_lib INTERFACE)
 # 链接 库
-target_link_libraries(opencv_lib2 INTERFACE ${OpenCV_LIBS})
+target_link_libraries(${PREFIX}_opencv_lib INTERFACE ${OpenCV_LIBS})
 # 查找 库 头文件
-target_include_directories(opencv_lib2 INTERFACE ${OpenCV_INCLUDE_DIRS})
+target_include_directories(${PREFIX}_opencv_lib INTERFACE ${OpenCV_INCLUDE_DIRS})
 # 将 库 链接给目标
-target_link_libraries(${PREFIX}_src_lib PUBLIC opencv_lib2)
+target_link_libraries(${PREFIX}_src_lib PUBLIC ${PREFIX}_opencv_lib)
 # 提示是否找到 库
 message(STATUS "OpenCV library status:")
 message(STATUS "> version: ${OpenCV_VERSION}")

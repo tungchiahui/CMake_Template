@@ -25,11 +25,11 @@ install(FILES ${${PREFIX}_HEADER_LIST} DESTINATION ${CMAKE_INSTALL_PREFIX}/inclu
 # 查找 库 的包
 find_package(Eigen3 REQUIRED)
 # 创建一个INTERFACE库(创建了一个不包含源代码的目标，专门用于传递编译选项、包含路径和链接库。)
-add_library(eigen3_lib INTERFACE)
+add_library(${PREFIX}_eigen3_lib INTERFACE)
 # 查找 库 头文件
-target_include_directories(eigen3_lib INTERFACE ${EIGEN3_INCLUDE_DIRS})
+target_include_directories(${PREFIX}_eigen3_lib INTERFACE ${EIGEN3_INCLUDE_DIRS})
 # 将 库 链接给目标
-target_link_libraries(${PREFIX}_src_lib PUBLIC eigen3_lib)
+target_link_libraries(${PREFIX}_src_lib PUBLIC ${PREFIX}_eigen3_lib)
 # 提示是否找到 库
 message(STATUS "Eigen3 include dirs: ${EIGEN3_INCLUDE_DIRS}")
 
@@ -38,13 +38,13 @@ message(STATUS "Eigen3 include dirs: ${EIGEN3_INCLUDE_DIRS}")
 # 查找 库 的包
 find_package(OpenCV REQUIRED)
 # 创建一个INTERFACE库(创建了一个不包含源代码的目标，专门用于传递编译选项、包含路径和链接库。)
-add_library(opencv_lib INTERFACE)
+add_library(${PREFIX}_opencv_lib INTERFACE)
 # 链接 库
-target_link_libraries(opencv_lib INTERFACE ${OpenCV_LIBS})
+target_link_libraries(${PREFIX}_opencv_lib INTERFACE ${OpenCV_LIBS})
 # 查找 库 头文件
-target_include_directories(opencv_lib INTERFACE ${OpenCV_INCLUDE_DIRS})
+target_include_directories(${PREFIX}_opencv_lib INTERFACE ${OpenCV_INCLUDE_DIRS})
 # 将 库 链接给目标
-target_link_libraries(${PREFIX}_src_lib PUBLIC opencv_lib)
+target_link_libraries(${PREFIX}_src_lib PUBLIC ${PREFIX}_opencv_lib)
 # 提示是否找到 库
 message(STATUS "OpenCV library status:")
 message(STATUS "> version: ${OpenCV_VERSION}")
