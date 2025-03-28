@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # 获取当前脚本所在目录的绝对路径
 SCRIPT_ABS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
