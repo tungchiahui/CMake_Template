@@ -32,21 +32,3 @@ target_include_directories(${PREFIX}_eigen3_lib INTERFACE ${EIGEN3_INCLUDE_DIRS}
 target_link_libraries(${PREFIX}_src_lib PUBLIC ${PREFIX}_eigen3_lib)
 # 提示是否找到 库
 message(STATUS "Eigen3 include dirs: ${EIGEN3_INCLUDE_DIRS}")
-
-
-# 引用第三方库(例如引用OpenCV4库)
-# 查找 库 的包
-find_package(OpenCV REQUIRED)
-# 创建一个INTERFACE库(创建了一个不包含源代码的目标，专门用于传递编译选项、包含路径和链接库。)
-add_library(${PREFIX}_opencv_lib INTERFACE)
-# 链接 库
-target_link_libraries(${PREFIX}_opencv_lib INTERFACE ${OpenCV_LIBS})
-# 查找 库 头文件
-target_include_directories(${PREFIX}_opencv_lib INTERFACE ${OpenCV_INCLUDE_DIRS})
-# 将 库 链接给目标
-target_link_libraries(${PREFIX}_src_lib PUBLIC ${PREFIX}_opencv_lib)
-# 提示是否找到 库
-message(STATUS "OpenCV library status:")
-message(STATUS "> version: ${OpenCV_VERSION}")
-message(STATUS "> include: ${OpenCV_INCLUDE_DIRS}")
-message(STATUS "> libraries: ${OpenCV_LIBS}")

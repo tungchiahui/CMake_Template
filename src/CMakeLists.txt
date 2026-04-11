@@ -29,16 +29,6 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 # 安装二进制文件
 install(TARGETS ${TARGET_NAME} DESTINATION ${USER_INSTALL_BIN_DIR})
 
-
-# 为当前项目添加子目录。子目录当中必须包含一个CMakeLists.txt文件，其中可以不写cmake_minimum_required与project。
-# add_subdirectory(<源文件子目录路径>)
-add_subdirectory(Func1)
-# 将动态库src_lib与目标进行链接
-target_link_libraries(${TARGET_NAME} PUBLIC Func1_src_lib)
-# 安装  动态库
-install(TARGETS Func1_src_lib DESTINATION ${USER_INSTALL_LIB_DIR})
-
-
 # 为当前项目添加子目录。子目录当中必须包含一个CMakeLists.txt文件，其中可以不写cmake_minimum_required与project。
 # add_subdirectory(<源文件子目录路径>)
 add_subdirectory(Matrix)

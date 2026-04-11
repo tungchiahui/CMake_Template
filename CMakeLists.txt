@@ -20,8 +20,8 @@ set(TARGET_NAME ${PROJECT_NAME})
 
 # 用于给变量设置值
 # set(<变量名> <变量值>)
-# 设置C++标准，一般用11或14,在C++中可以通过输出__cplusplus的值查看对应表得知当前编译器所用的标准
-set(CMAKE_CXX_STANDARD 14)
+# 设置C++标准，一般用11,14或17等,在C++中可以通过输出__cplusplus的值查看对应表得知当前编译器所用的标准
+set(CMAKE_CXX_STANDARD 17)
 # 设置C标准
 set(CMAKE_C_STANDARD 11)
 
