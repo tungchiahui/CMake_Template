@@ -1,79 +1,65 @@
-# README
+# cmake_template
 
 [中文](README-zh_CN.md) | English
 
-1. Project Name: CMake_Template_Project
-2. Version: v2.0
-3. State: Pre-Release
-4. Author: Tung Chia-hui
-5. Website: [https://github.com/tungchiahui](https://github.com/tungchiahui)
-6. E-mail: tungchiahui@gmail.com
-7. Organization: SDUT_EMIS_VinciRobot
-8. Date: 2023-03-20
-9. Future Features: 
-    1. Make_Log do not recorded.
-    2. Add more things to the vinci_ emis script.
+A Linux-only CMake project template using modern CMake, CMake presets, Ninja, and the VSCode CMake Tools workflow.
 
+## Requirements
 
-##### If there is an error when running and it says that some libraries are missing, please check if you have Eigen3 and OpenCV4.
-##### For those who need to use scripts, please refer to the script folder.
+Fedora:
 
+```bash
+sudo dnf install cmake ninja-build eigen3-devel
+```
 
-# How to build and run program instructions for the project
+Ubuntu/Debian:
 
+```bash
+sudo apt install cmake ninja-build libeigen3-dev
+```
 
-## 1. `Regular command line operation`
+## Build
 
-### Function
+Debug:
 
-- CMake generates compiled files such as Makefiles.
-- MakeFiles generates bin, lib, and other files.
-- Load the lib environment and run the binary program.
+```bash
+cmake --preset linux-debug
+cmake --build --preset linux-debug
+cmake --install build/linux-debug
+./install/linux-debug/bin/cmake_template
+```
 
-### Usage Method
+Release:
 
-1. **Build**
+```bash
+cmake --preset linux-release
+cmake --build --preset linux-release
+cmake --install build/linux-release
+./install/linux-release/bin/cmake_template
+```
 
-   使用以下命令编译出二进制文件：
+## VSCode
 
-   ```bash
-    # 请确认该脚本在build文件夹下运行
-    cd build
-    # 进行CMake
-    cmake ..
-    # 进行MakeFiles
-    make install
+Install the CMake Tools extension, select the `linux-debug` or `linux-release` preset, then configure and build from CMake Tools.
 
+## Layout
 
+```text
+.
+├── CMakeLists.txt
+├── CMakePresets.json
+├── cmake/
+│   └── ProjectOptions.cmake
+└── src/
+    ├── main.cpp
+    ├── lib1/
+    │   ├── CMakeLists.txt
+    │   ├── inc/lib1/eigen3_test.hpp
+    │   └── src/eigen3_test.cpp
+    └── lib2/
+        ├── CMakeLists.txt
+        ├── inc/lib2/eigen3_test.hpp
+        └── src/eigen3_test.cpp
+```
 
-2. **RUN**
-
-   使用以下命令运行二进制文件：
-
-   ```bash
-    # 请确认该脚本在build文件夹下运行
-    cd build
-    # 加载lib环境
-    source ../install/.setup.bash
-    # 运行二进制程序(demo1换成对应的二进制文件名)
-    ../install/bin/demo1
-
-## 2. `VScode Task Launch`
-
-### Function
-
-- Use VScode's powerful task function to easily perform one click tasks such as CMake, MakeFiles, loading lib environment, and running binary programs.
-- This method can be used for debugging.
-
-### Usage Method
-
-1. **Click Run**
-
-   直接点击VScode的Run即可，注意，如果有报错，需要去log文件夹下查看对应的.log文件来寻找错误，或者打断点Debug。
-
-
-## 3. `Script Method`
-
-### Fuction
-
-- 详见script文件夹下的Markdown。
+`lib1` and `lib2` each find and link Eigen where they use it. The executable is named after the project: `cmake_template`.

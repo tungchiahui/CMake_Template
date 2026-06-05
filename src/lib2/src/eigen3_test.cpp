@@ -1,10 +1,18 @@
-#include "lib2/inc/eigen3_test.hpp"
+#include "lib2/eigen3_test.hpp"
+
+#include <Eigen/Dense>
 #include <iostream>
-#include "eigen3/Eigen/Dense"
 
+namespace lib2 {
 
-
-void main_test(void)
+void run_eigen_matrix_example()
 {
-    
+    Eigen::Matrix2d matrix;
+    matrix << 1.0, 2.0,
+              3.0, 4.0;
+
+    std::cout << "[lib2] Matrix m =\n" << matrix << '\n';
+    std::cout << "[lib2] Determinant = " << matrix.determinant() << '\n';
 }
+
+}  // namespace lib2
