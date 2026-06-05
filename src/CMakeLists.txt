@@ -31,8 +31,15 @@ install(TARGETS ${TARGET_NAME} DESTINATION ${USER_INSTALL_BIN_DIR})
 
 # 为当前项目添加子目录。子目录当中必须包含一个CMakeLists.txt文件，其中可以不写cmake_minimum_required与project。
 # add_subdirectory(<源文件子目录路径>)
-add_subdirectory(Matrix)
+add_subdirectory(lib1)
 # 将动态库src_lib与目标进行链接
-target_link_libraries(${TARGET_NAME} PUBLIC Matrix_src_lib)
+target_link_libraries(${TARGET_NAME} PUBLIC lib1_src_lib)
 # 安装  动态库
-install(TARGETS Matrix_src_lib DESTINATION ${USER_INSTALL_LIB_DIR})
+install(TARGETS lib1_src_lib DESTINATION ${USER_INSTALL_LIB_DIR})
+
+# add_subdirectory(<源文件子目录路径>)
+add_subdirectory(lib2)
+# 将动态库src_lib与目标进行链接
+target_link_libraries(${TARGET_NAME} PUBLIC lib2_src_lib)
+# 安装  动态库
+install(TARGETS lib2_src_lib DESTINATION ${USER_INSTALL_LIB_DIR})

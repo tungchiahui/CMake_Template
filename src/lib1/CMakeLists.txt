@@ -1,5 +1,5 @@
 # 定义包前缀变量
-set(PREFIX "Matrix")
+set(PREFIX "lib1")
 message(STATUS "it's ${PREFIX}:")
 
 # 查找 src 目录及其子目录中的所有.c和.cpp 文件添加到列表(获取的是完整的文件绝对路径)
