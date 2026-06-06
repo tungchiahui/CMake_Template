@@ -11,6 +11,11 @@ target_link_libraries(${PROJECT_NAME}
 add_subdirectory(lib1)
 add_subdirectory(lib2)
 
+target_link_libraries(lib1_src_lib
+  PRIVATE
+    lib2_src_lib
+)
+
 target_link_libraries(${PROJECT_NAME}
   PRIVATE
     lib1_src_lib
