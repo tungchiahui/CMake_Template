@@ -4,6 +4,10 @@
 
 这是一个只支持 Linux 的 CMake 工程模板，使用现代 CMake、CMakePresets.json、Ninja 和 VSCode CMake Tools 工作流。
 
+更详细的模板说明、图形化构建步骤和第三方库配置请访问：
+
+<http://tungchiahui.cn/zh-cn/wiki/2023-10-05-cplusplus-jiao-xue/ch21-cmake-gong-cheng-mu-ban>
+
 ## 依赖
 
 Fedora:
@@ -40,15 +44,13 @@ cmake --install build/linux-release
 
 ## VSCode
 
-安装 CMake Tools 扩展后，选择 `linux-debug` 或 `linux-release` preset，然后通过 CMake Tools 配置和构建即可。
+安装 CMake Tools 扩展后，它会自动识别 `CMakePresets.json`。如果要断点调试，再安装 Microsoft C/C++ 扩展和 GDB。
 
-如果要按 F5 调试，再安装 Microsoft C/C++ 扩展。这个模板保留了一个极简 `.vscode/launch.json`，它会启动 CMake Tools 当前选择的 target：
-
-1. 选择 `linux-debug` configure preset。
-2. 使用 CMake Tools 配置工程。
-3. 使用 CMake Tools 构建工程。
-4. 选择 `cmake_template` 作为 launch target。
-5. 按 F5，选择 `Debug CMake Target`。
+1. 选择 `linux-debug` 或 `linux-release` configure preset。
+2. 点击 Configure。
+3. 点击 Build。
+4. 选择 `cmake_template` 作为运行/调试 target。
+5. 点击 CMake Tools 的运行按钮或 Debug 按钮。
 
 日常开发时，可以直接运行或调试 build 目录里的程序：
 
@@ -69,8 +71,6 @@ cmake --install build/linux-debug
 .
 ├── CMakeLists.txt
 ├── CMakePresets.json
-├── .vscode/
-│   └── launch.json
 ├── cmake/
 │   └── ProjectOptions.cmake
 └── src/

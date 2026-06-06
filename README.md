@@ -4,6 +4,10 @@
 
 A Linux-only CMake project template using modern CMake, CMake presets, Ninja, and the VSCode CMake Tools workflow.
 
+For detailed documentation, graphical build instructions, and third-party dependency configuration, visit:
+
+<http://tungchiahui.cn/en-us/wiki/2023-10-05-cplusplus-jiao-xue/ch21-cmake-gong-cheng-mu-ban>
+
 ## Requirements
 
 Fedora:
@@ -40,15 +44,13 @@ cmake --install build/linux-release
 
 ## VSCode
 
-Install the CMake Tools extension, select the `linux-debug` or `linux-release` preset, then configure and build from CMake Tools.
+Install the CMake Tools extension. It automatically detects `CMakePresets.json`. For breakpoint debugging, also install the Microsoft C/C++ extension and GDB.
 
-For F5 debugging, also install the Microsoft C/C++ extension. This template keeps a minimal `.vscode/launch.json` that launches the currently selected CMake target:
-
-1. Select the `linux-debug` configure preset.
-2. Configure the project with CMake Tools.
-3. Build the project with CMake Tools.
-4. Select `cmake_template` as the launch target.
-5. Press F5 and choose `Debug CMake Target`.
+1. Select the `linux-debug` or `linux-release` configure preset.
+2. Click Configure.
+3. Click Build.
+4. Select `cmake_template` as the run/debug target.
+5. Click the CMake Tools Run or Debug button.
 
 During development, run or debug the build-tree executable directly:
 
@@ -69,8 +71,6 @@ cmake --install build/linux-debug
 .
 ├── CMakeLists.txt
 ├── CMakePresets.json
-├── .vscode/
-│   └── launch.json
 ├── cmake/
 │   └── ProjectOptions.cmake
 └── src/
