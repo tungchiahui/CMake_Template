@@ -35,6 +35,11 @@ target_link_libraries(${PREFIX}_src_lib
 # =======
 # Install
 # =======
+# 安装后从自身所在目录查找同目录的 lib2
+set_target_properties(${PREFIX}_src_lib PROPERTIES
+  INSTALL_RPATH "$ORIGIN"
+)
+
 install(TARGETS ${PREFIX}_src_lib
   LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
   ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}

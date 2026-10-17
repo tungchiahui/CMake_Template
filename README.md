@@ -10,6 +10,10 @@ For detailed documentation, graphical build instructions, and third-party depend
 
 ## Requirements
 
+Requires CMake 3.22 or newer, Ninja, a C++ compiler, and Eigen 3. The template defaults to C++23 and uses CMake preset format version 3.
+
+On Ubuntu 22.04, the distribution-provided CMake 3.22.1 can be used directly. Install the dependencies below; no CMake upgrade is needed for this template. When developing in a container, install these tools inside the container so VSCode CMake Tools can use them.
+
 Fedora:
 
 ```bash
