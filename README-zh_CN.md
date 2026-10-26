@@ -94,7 +94,7 @@ cmake --install build/windows-debug
 ./install/windows-debug/bin/cmake_template.exe
 ```
 
-Windows 构建目录的 `bin/` 包含 EXE 和项目 DLL；开发时，UCRT64 环境提供 GCC 运行库。安装时会将工具链中可找到的常用 GCC 运行库 DLL（libstdc++、libgcc、libwinpthread 等）一并复制到安装目录的 `bin/`，系统 DLL 不会复制。分发时保留整个安装目录，不要只复制 EXE。新增第三方 DLL 依赖时，应另行添加对应 DLL 的安装规则。
+Windows 预设默认静态链接项目库，构建出的程序位于 `bin/`。开发时由 PATH 中的工具链提供 GCC 运行环境；安装时会复制工具链中找到的常用 GCC 运行库。分发时保留整个安装目录。新增第三方依赖后，按该库自身的安装要求补充配置。
 
 ### 自定义 Eigen 路径
 
@@ -158,6 +158,6 @@ code .
         └── src/eigen3_test.cpp
 ```
 
-`lib1` 和 `lib2` 都在自己的模块内查找并链接 Eigen。公共 API 使用自动生成的 `lib1/export.hpp`、`lib2/export.hpp` 中的导出宏；这些头文件位于各模块的构建目录，并随库一起安装。新增公共函数或类时也应使用对应的 `LIB1_EXPORT` / `LIB2_EXPORT`。
+`lib1` 和 `lib2` 都在自己的模块内查找并链接 Eigen。库模块不写死类型，由 `BUILD_SHARED_LIBS` 控制：Linux 预设为 `ON`，Windows 预设为 `OFF`。普通函数和类使用相同的公开头文件，不需要平台专用的声明。
 
 GitHub Actions 覆盖 Linux 与 Windows UCRT64 的 Debug/Release，检查示例运行和安装目录移动后的运行；Windows 安装验证会移除 PATH 中的开发工具链。

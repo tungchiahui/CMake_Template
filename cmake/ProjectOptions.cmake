@@ -8,7 +8,7 @@ set(CMAKE_C_EXTENSIONS OFF)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-# Windows searches for project DLLs beside the executable during development.
+# Keep the Windows executable in a predictable location.
 if(WIN32)
   set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
 endif()

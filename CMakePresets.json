@@ -25,6 +25,9 @@
         "type": "equals",
         "lhs": "${hostSystemName}",
         "rhs": "Linux"
+      },
+      "cacheVariables": {
+        "BUILD_SHARED_LIBS": "ON"
       }
     },
     {
@@ -46,7 +49,8 @@
       },
       "cacheVariables": {
         "CMAKE_C_COMPILER": "gcc",
-        "CMAKE_CXX_COMPILER": "g++"
+        "CMAKE_CXX_COMPILER": "g++",
+        "BUILD_SHARED_LIBS": "OFF"
       }
     },
     {

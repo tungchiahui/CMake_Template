@@ -94,7 +94,7 @@ cmake --install build/windows-debug
 ./install/windows-debug/bin/cmake_template.exe
 ```
 
-The Windows build directory's `bin/` contains the executable and project DLLs; the UCRT64 environment supplies the GCC runtime DLLs during development. Installation also copies common GCC runtime DLLs found in the toolchain (libstdc++, libgcc, libwinpthread, etc.) into the installed `bin/`, excluding Windows system DLLs. Distribute the whole installation directory, rather than just the executable. Add explicit installation rules when introducing third-party DLL dependencies.
+Windows presets statically link the project libraries. The executable is in `bin/`; the toolchain on PATH supplies the GCC runtime during development. Installation copies common GCC runtime libraries found in the toolchain. Distribute the complete installation directory and follow each added third-party library's installation requirements.
 
 ### Custom Eigen location
 
@@ -158,6 +158,6 @@ For clangd, the repository's `.clangd` defaults to `build/linux-debug`. On Windo
         └── src/eigen3_test.cpp
 ```
 
-`lib1` and `lib2` each find and link Eigen in their own module. Public APIs use export macros from the generated `lib1/export.hpp` and `lib2/export.hpp` headers. These headers live in the modules' build directories and are installed with the libraries. Mark new public functions and classes with the corresponding `LIB1_EXPORT` / `LIB2_EXPORT` macro.
+`lib1` and `lib2` each find and link Eigen in their own module. `BUILD_SHARED_LIBS` selects their library type: Linux presets use `ON`, while Windows presets use `OFF`. Functions and classes use the same ordinary public declarations on both platforms.
 
 GitHub Actions covers Linux and Windows UCRT64 in Debug and Release, checking the example and relocated installations. The Windows installation check removes the development toolchain from PATH.
