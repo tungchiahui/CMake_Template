@@ -5,19 +5,13 @@ file(GLOB_RECURSE ${PREFIX}_SRC_LIST CONFIGURE_DEPENDS
   "${CMAKE_CURRENT_LIST_DIR}/src/*.cpp"
 )
 
-add_library(${PREFIX}_src_lib SHARED
+add_library(${PREFIX}_src_lib
   ${${PREFIX}_SRC_LIST}
-)
-
-generate_export_header(${PREFIX}_src_lib
-  BASE_NAME ${PREFIX}
-  EXPORT_FILE_NAME "${CMAKE_CURRENT_BINARY_DIR}/inc/${PREFIX}/export.hpp"
 )
 
 target_include_directories(${PREFIX}_src_lib
   PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_LIST_DIR}/inc>
-    $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/inc>
     $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
 )
 
@@ -56,8 +50,4 @@ install(TARGETS ${PREFIX}_src_lib
 
 install(DIRECTORY "${CMAKE_CURRENT_LIST_DIR}/inc/"
   DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
-)
-
-install(FILES "${CMAKE_CURRENT_BINARY_DIR}/inc/${PREFIX}/export.hpp"
-  DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/${PREFIX}"
 )
