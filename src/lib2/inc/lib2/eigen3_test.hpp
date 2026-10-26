@@ -1,7 +1,9 @@
 #pragma once
 
+#include "lib2/export.hpp"
+
 namespace lib2 {
 
-void run_eigen_matrix_example();
+LIB2_EXPORT void run_eigen_matrix_example();
 
 }  // namespace lib2
