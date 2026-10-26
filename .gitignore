@@ -8,7 +8,12 @@ CMakeUserPresets.json
 *.cmake.user
 
 *.o
+*.obj
 *.a
+*.lib
+*.pdb
+*.ilk
+*.exp
 *.so
 *.so.*
 *.dll

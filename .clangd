@@ -1,2 +1,3 @@
 CompileFlags:
+  # Windows: build/windows-debug; adjust this path to the active preset.
   CompilationDatabase: build/linux-debug

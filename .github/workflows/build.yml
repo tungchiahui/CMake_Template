@@ -1,0 +1,69 @@
+name: Build and run
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  linux:
+    runs-on: ubuntu-22.04
+    strategy:
+      fail-fast: false
+      matrix:
+        preset: [linux-debug, linux-release]
+    steps:
+      - uses: actions/checkout@v7
+      - name: Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y cmake ninja-build g++ libeigen3-dev
+      - name: Configure, build, and test
+        run: |
+          cmake --preset "${{ matrix.preset }}"
+          cmake --build --preset "${{ matrix.preset }}" --parallel 2
+          ctest --preset "${{ matrix.preset }}"
+      - name: Run relocated installation
+        run: |
+          cmake --install "build/${{ matrix.preset }}"
+          mv "install/${{ matrix.preset }}" "${RUNNER_TEMP}/relocated installation"
+          cd "${RUNNER_TEMP}"
+          env -u LD_LIBRARY_PATH './relocated installation/bin/cmake_template'
+
+  windows:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: msys2 {0}
+    strategy:
+      fail-fast: false
+      matrix:
+        preset: [windows-debug, windows-release]
+    steps:
+      - uses: actions/checkout@v7
+      - uses: msys2/setup-msys2@v2
+        with:
+          msystem: UCRT64
+          update: true
+          install: >-
+            mingw-w64-ucrt-x86_64-gcc
+            mingw-w64-ucrt-x86_64-cmake
+            mingw-w64-ucrt-x86_64-ninja
+            mingw-w64-ucrt-x86_64-eigen3
+      - name: Configure, build, and test
+        run: |
+          cmake --preset "${{ matrix.preset }}"
+          cmake --build --preset "${{ matrix.preset }}" --parallel 2
+          ctest --preset "${{ matrix.preset }}"
+      - name: Install
+        run: cmake --install "build/${{ matrix.preset }}"
+      - name: Run relocated installation without the toolchain on PATH
+        shell: pwsh
+        run: |
+          $destination = Join-Path $env:RUNNER_TEMP 'relocated installation'
+          Move-Item 'install/${{ matrix.preset }}' $destination
+          $env:PATH = "$env:SystemRoot\System32;$env:SystemRoot"
+          Set-Location $env:RUNNER_TEMP
+          & "$destination\bin\cmake_template.exe"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }

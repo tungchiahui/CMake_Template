@@ -22,9 +22,11 @@ target_link_libraries(${PROJECT_NAME}
     lib2_src_lib
 )
 
-set_target_properties(${PROJECT_NAME} PROPERTIES
-  INSTALL_RPATH "$ORIGIN/../${CMAKE_INSTALL_LIBDIR}"
-)
+if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
+  set_target_properties(${PROJECT_NAME} PROPERTIES
+    INSTALL_RPATH "$ORIGIN/../${CMAKE_INSTALL_LIBDIR}"
+  )
+endif()
 
 install(TARGETS ${PROJECT_NAME}
   RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
